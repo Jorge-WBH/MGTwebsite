@@ -18,13 +18,12 @@ body {
 }
 
 .banner {
-    text-align: center; 
-    font-size: xxx-large; 
-    background-color: black; 
-    color: white; 
+    text-align: center;
+    font-size: xxx-large;
+    background-color: black;
+    color: white;
     padding: 10px;
     margin: 0;
-    
 }
 
 .row {
@@ -40,7 +39,7 @@ body {
 
 .col1 {
     flex: 2;
-    padding: 10px;
+    padding: 0px;
     background-image: url("heroimage.jpg");
     background-size: cover;
     background-position: center;
@@ -96,8 +95,10 @@ button {
 .bluebutton {
     background-color: lightskyblue;
     margin-bottom: 2vh;
+    width: 40vh;
 }
 
 .orangebutton {
     background-color: orange;
+    width: 40vh;
 }

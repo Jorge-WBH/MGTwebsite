@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Mojang';
+    src: url('fonts/Mojang-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Mojang';
+    color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    /* Remove default body margin */
+    height: 100vh;
+    /* Ensure body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    text-align: center; 
+    font-size: xxx-large; 
+    background-color: black; 
+    color: white; 
+    padding: 10px;
+    margin: 0;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    /* Make the row take the full height of the body */
+    margin: 0;
+    /* Remove margin from the row */
+    flex: 1;
+    /* Allow the row to take up remaining space */
+}
+
+.col1 {
+    flex: 2;
+    padding: 10px;
+    background-image: url("heroimage.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    /* Make the column take the full height of the row */
+    max-height: calc(100vh - 50px);
+    /* Limit height to viewport minus footer height */
+}
+
+.col2 {
+    flex: 1;
+    padding: 20px;
+    /* Increase padding for better spacing */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    gap: 15px;
+    /* Add spacing between elements */
+    /* Keep the text at the top */
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    /* Change from absolute to relative */
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 10%;
+    border-radius: 10px;
+    color: black;
+}
+
+.buttongroup {
+    text-align: center;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+    padding: 20px;
+    padding-top: 20px;
+    /* Add spacing between buttons */
+}
+
+.bluebutton {
+    background-color: lightskyblue;
+    margin-bottom: 2vh;
+}
+
+.orangebutton {
+    background-color: orange;
+}

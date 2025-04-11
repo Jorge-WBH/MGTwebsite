@@ -51,7 +51,7 @@ body {
 
 .col2 {
     flex: 1;
-    padding: 20px;
+    padding: 2vh;
     /* Increase padding for better spacing */
     height: 100%;
     display: flex;
@@ -93,12 +93,12 @@ button {
 }
 
 .bluebutton {
-    background-color: lightskyblue;
+    background-color: rgb(150, 40, 40);
+    color: whitesmoke;
     margin-bottom: 2vh;
     width: 40vh;
 }
 
 .orangebutton {
-    background-color: orange;
     width: 40vh;
 }

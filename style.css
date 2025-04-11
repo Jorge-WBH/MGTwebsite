@@ -4,6 +4,7 @@
 }
 
 * {
+    line-height: 1.3;
     font-family: 'Mojang';
     color: rgb(255, 255, 255);
 }
@@ -22,7 +23,7 @@ body {
     font-size: xxx-large;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 20px;
     margin: 0;
 }
 
@@ -35,6 +36,13 @@ body {
     /* Remove margin from the row */
     flex: 1;
     /* Allow the row to take up remaining space */
+}
+
+.col {
+    margin: 3vh;
+    align-items: center;
+    text-align: center;
+    flex: 1;
 }
 
 .col1 {
@@ -67,9 +75,6 @@ footer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: relative;
-    /* Change from absolute to relative */
-    bottom: 0;
     width: 100%;
     background-color: #333;
     color: #fff;

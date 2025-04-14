@@ -11,99 +11,141 @@
 
 body {
     margin: 0;
-    /* Remove default body margin */
-    height: 100vh;
-    /* Ensure body takes up the full viewport height */
-    display: flex;
-    flex-direction: column;
+    background-color: black;
+    overflow-x: hidden;
 }
 
-.banner {
-    text-align: left;
-    font-size: xxx-large;
+.hero-section {
+    background-image: url('heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    text-align: center;
+    color: rgb(150, 40, 40);
+    background-color: antiquewhite;
+    padding: 15px;
+    margin: 20px;
+    max-width: 90vw;
+    width: fit-content;
+}
+
+.header-bar {
+    position: fixed;
+    /* Changed from absolute to fixed */
+    top: 0;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    color: rgb(150, 40, 40);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.2em;
+    z-index: 1000;
+    /* Added to ensure it stays on top */
+}
+
+.survey-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(150, 40, 40);
+    color: antiquewhite;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-hint {
+    text-align: center;
+    color: rgb(150, 40, 40);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.content-section {
+    width: 100%;
+    position: relative;
+    top: 100vh;
+    padding: 40px 0;
+}
+
+.about-section {
+    background-color: rgb(237, 232, 227);
+    margin-top: -1px;
+    height: auto;
+    overflow: hidden;
+}
+
+.gallery-section {
     background-color: black;
-    color: white;
-    padding: 20px;
-    margin: 0;
+    margin-top: -1px;
+    /* Fix potential gap */
+}
+
+.section-title {
+    text-align: center;
+    color: inherit;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
-    /* Make the row take the full height of the body */
-    margin: 0;
-    /* Remove margin from the row */
-    flex: 1;
-    /* Allow the row to take up remaining space */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
 }
 
 .col {
-    margin: 3vh;
-    align-items: center;
-    text-align: center;
     flex: 1;
-}
-
-.col1 {
-    flex: 2;
-    padding: 0px;
-    background-image: url("heroimage.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    /* Make the column take the full height of the row */
-    max-height: calc(100vh - 50px);
-    /* Limit height to viewport minus footer height */
-}
-
-.col2 {
-    flex: 1;
-    padding: 2vh;
-    padding-top: 0;
-    /* Increase padding for better spacing */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center content horizontally */
-    gap: 15px;
-    /* Add spacing between elements */
-    /* Keep the text at the top */
-}
-
-footer {
+    min-width: 300px;
+    padding: 15px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9rem;
 }
 
-button {
-    padding: 10%;
-    border-radius: 10px;
+.about-text {
     color: black;
-}
-
-.buttongroup {
     text-align: center;
-    gap: 20px;
-    flex: 1;
-    align-items: center;
-    padding: 20px;
-    padding-top: 20px;
-    /* Add spacing between buttons */
+    padding: 5% 0%;
 }
 
-.bluebutton {
-    background-color: rgb(150, 40, 40);
-    color: whitesmoke;
-    margin-bottom: 2vh;
-    width: 40vh;
+.gallery-label {
+    color: rgb(150, 40, 40);
 }
 
-.orangebutton {
-    width: 40vh;
+.media-content {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 6vw;
+    }
+
+    .col {
+        flex: 100%;
+    }
+
+    .media-content {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 360px;
+    }
 }

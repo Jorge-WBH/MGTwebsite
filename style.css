@@ -19,7 +19,7 @@ body {
 }
 
 .banner {
-    text-align: center;
+    text-align: left;
     font-size: xxx-large;
     background-color: black;
     color: white;
@@ -30,7 +30,6 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    height: 100%;
     /* Make the row take the full height of the body */
     margin: 0;
     /* Remove margin from the row */
@@ -60,6 +59,7 @@ body {
 .col2 {
     flex: 1;
     padding: 2vh;
+    padding-top: 0;
     /* Increase padding for better spacing */
     height: 100%;
     display: flex;
